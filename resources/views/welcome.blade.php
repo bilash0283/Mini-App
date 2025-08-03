@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>bKash UI Clone</title>
+  <title>Mini Money Plant</title>
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body class="bg-[#f2f2f2] text-gray-800">
@@ -17,7 +17,7 @@
         <button class="text-[11px] bg-white text-[#d6006e] px-2 py-[2px] rounded-full mt-1">ব্যালেন্স জানতে ট্যাপ করুন</button>
       </div>
     </div>
-    <img src="https://upload.wikimedia.org/wikipedia/commons/5/5a/BKash_Logo.png" class="w-8 h-8" />
+    <img src="https://upload.wikimedia.org/wikipedia/commons/5/5a/BKash_Logo.png" class="w-8 h-8" alt="this is image" />
   </div>
 
   <!-- Grid Menu -->
@@ -76,26 +76,8 @@
   </div>
 
   <!-- Banner -->
-  <div class="mt-2 px-4">
+  <div class="mt-2 mb-5 px-4">
     <img src="https://i.ibb.co/G9xZDK0/bkash-ticket.png" class="rounded-md w-full" alt="Ticket Banner" />
-  </div>
-
-  <!-- Sub Sections -->
-  <div class="bg-white mt-2 p-4">
-    <h2 class="text-sm font-semibold mb-2">সাবস্ক্রিপশন</h2>
-    <div class="flex gap-4 overflow-x-auto">
-      <img src="https://i.ibb.co/w46n9D1/mission.png" class="h-12" />
-      <img src="https://i.ibb.co/kc1KRhv/shadhin.png" class="h-12" />
-      <img src="https://i.ibb.co/mHX1py1/bdjobs.png" class="h-12" />
-    </div>
-  </div>
-
-  <div class="bg-white mt-2 p-4">
-    <h2 class="text-sm font-semibold mb-2">অফার</h2>
-    <div class="flex gap-4 overflow-x-auto">
-      <img src="https://i.ibb.co/gdJGLG4/ajkerdeal.png" class="h-12" />
-      <img src="https://i.ibb.co/SKmVZhz/robi.png" class="h-12" />
-    </div>
   </div>
 
   <!-- Bottom Nav -->
