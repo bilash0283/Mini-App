@@ -76,8 +76,8 @@
   </div>
 
   <!-- Banner -->
-  <div class="mt-2 mb-5 px-4">
-    <img src="https://i.ibb.co/G9xZDK0/bkash-ticket.png" class="rounded-md w-full" alt="Ticket Banner" />
+  <div class="mt-2 mb-[65px] px-4">
+    <img src="{{ asset('assets/app_images/banner.png') }}" class="rounded-md w-full" alt="Ticket Banner" />
   </div>
 
   <!-- Bottom Nav -->
