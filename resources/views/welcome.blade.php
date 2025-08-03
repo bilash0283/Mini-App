@@ -17,7 +17,7 @@
         <button class="text-[11px] bg-white text-[#d6006e] px-2 py-[2px] rounded-full mt-1">ব্যালেন্স জানতে ট্যাপ করুন</button>
       </div>
     </div>
-    <img src="https://upload.wikimedia.org/wikipedia/commons/5/5a/BKash_Logo.png" class="w-8 h-8" alt="this is image" />
+    <img src="{{ asset('assets/app_images/app_logo.png') }}" class="w-20 h-20" alt="this is logo" />
   </div>
 
   <!-- Grid Menu -->
