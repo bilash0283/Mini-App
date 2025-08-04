@@ -14,7 +14,7 @@
       <img src="https://randomuser.me/api/portraits/men/75.jpg" class="w-10 h-10 rounded-full border-2 border-white" />
       <div>
         <p class="text-sm font-bold">Rafiqul Rahman</p>
-        <button class="text-[11px] bg-white text-[#d6006e] px-2 py-[2px] rounded-full mt-1">ব্যালেন্স জানতে ট্যাপ করুন</button>
+        <button class="text-[11px] bg-white text-[#d6006e] px-2 py-[2px] rounded-full mt-1">Tap to check balance</button>
       </div>
     </div>
     <img src="{{ asset('assets/app_images/app_logo.png') }}" class="w-20 h-20" alt="this is logo" />
@@ -24,19 +24,19 @@
   <div class="bg-white grid grid-cols-4 gap-4 p-4 text-center text-sm">
     <div class="flex flex-col items-center">
       <img src="https://cdn-icons-png.flaticon.com/128/1828/1828817.png" class="w-8 h-8" />
-      <p>সেন্ড মানি</p>
+      <p>Send Money</p>
     </div>
     <div class="flex flex-col items-center">
       <img src="https://cdn-icons-png.flaticon.com/128/3135/3135715.png" class="w-8 h-8" />
-      <p>মোবাইল রিচার্জ</p>
+      <p>Mobile Recharge</p>
     </div>
     <div class="flex flex-col items-center">
       <img src="https://cdn-icons-png.flaticon.com/128/2089/2089709.png" class="w-8 h-8" />
-      <p>ক্যাশ আউট</p>
+      <p>Cash Out</p>
     </div>
     <div class="flex flex-col items-center">
       <img src="https://cdn-icons-png.flaticon.com/128/318/318221.png" class="w-8 h-8" />
-      <p>পেমেন্ট</p>
+      <p>Payment</p>
     </div>
     <div class="flex flex-col items-center">
       <img src="https://cdn-icons-png.flaticon.com/128/833/833472.png" class="w-8 h-8" />
