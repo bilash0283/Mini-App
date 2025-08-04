@@ -14,7 +14,7 @@
       <img src="https://randomuser.me/api/portraits/men/75.jpg" class="w-10 h-10 rounded-full border-2 border-white" />
       <div>
         <p class="text-sm font-bold">Rafiqul Rahman</p>
-        <button class="text-[11px] bg-white text-[#d6006e] px-2 py-[2px] rounded-full mt-1"><span class="">$</span> Tap to check balance</button>
+        <button class="text-[11px] bg-white text-[#d6006e] px-2 py-[2px] rounded-full mt-1"><span class="animate-spin">$</span> Tap to check balance</button>
       </div>
     </div>
     <img src="{{ asset('assets/app_images/app_logo.png') }}" class="w-20 h-20" alt="this is logo" />
