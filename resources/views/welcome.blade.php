@@ -22,7 +22,7 @@
 
   <!-- Grid Menu -->
   <div class="bg-white grid grid-cols-4 gap-4 p-4 text-center text-sm">
-    <div class="flex flex-col items-center">
+    <div class="flex flex-col items-center hover: border-2 hover:border-green-500">
       <img src="https://cdn-icons-png.flaticon.com/128/1828/1828817.png" class="w-8 h-8" />
       <p>Send Money</p>
     </div>
@@ -46,7 +46,7 @@
       <img src="https://cdn-icons-png.flaticon.com/128/1041/1041870.png" class="w-8 h-8" />
       <p>পে বিল</p>
     </div>
-    <div class="flex flex-col items-center border-2 border-green-500 rounded-md p-1">
+    <div class="flex flex-col items-center rounded-md p-1">
       <img src="https://cdn-icons-png.flaticon.com/128/854/854878.png" class="w-8 h-8" />
       <p>টিকেট</p>
     </div>
