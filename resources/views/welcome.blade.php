@@ -14,7 +14,7 @@
       <img src="https://randomuser.me/api/portraits/men/75.jpg" class="w-10 h-10 rounded-full border-2 border-white" />
       <div>
         <p class="text-sm font-bold">Rafiqul Rahman</p>
-        <button class="text-[11px] bg-white text-[#d6006e] px-2 py-[2px] rounded-full mt-1">Tap to check balance</button>
+        <button class="text-[11px] bg-white text-[#d6006e] px-2 py-[2px] rounded-full mt-1"><span class="">$</span> Tap to check balance</button>
       </div>
     </div>
     <img src="{{ asset('assets/app_images/app_logo.png') }}" class="w-20 h-20" alt="this is logo" />
@@ -22,7 +22,7 @@
 
   <!-- Grid Menu -->
   <div class="bg-white grid grid-cols-4 gap-4 p-4 text-center text-sm">
-    <div class="flex flex-col items-center hover:border-2 hover:border-green-500">
+    <div class="flex flex-col items-center hover:p-1 hover:border-2 hover:border-green-500 ">
       <img src="https://cdn-icons-png.flaticon.com/128/1828/1828817.png" class="w-8 h-8" />
       <p>Send Money</p>
     </div>
