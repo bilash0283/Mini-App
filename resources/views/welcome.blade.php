@@ -44,11 +44,11 @@
     </div>
     <div class="flex flex-col items-center hover:p-1 hover:border-2 hover:border-green-500">
       <img src="https://cdn-icons-png.flaticon.com/128/833/833472.png" class="w-8 h-8" />
-      <p>অ্যাড মানি</p>
+      <p>Add Money</p>
     </div>
     <div class="flex flex-col items-center hover:p-1 hover:border-2 hover:border-green-500">
       <img src="https://cdn-icons-png.flaticon.com/128/1041/1041870.png" class="w-8 h-8" />
-      <p>পে বিল</p>
+      <p>Pay Bill</p>
     </div>
     <div class="flex flex-col items-center rounded-md p-1 hover:p-1 hover:border-2 hover:border-green-500">
       <img src="https://cdn-icons-png.flaticon.com/128/854/854878.png" class="w-8 h-8" />
@@ -102,3 +102,8 @@
 
 </body>
 </html>
+
+
+
+
+
