@@ -30,31 +30,31 @@
       <img src="https://cdn-icons-png.flaticon.com/128/1828/1828817.png" class="w-8 h-8" />
       <p>Send Money</p>
     </div>
-    <div class="flex flex-col items-center hover:border-2 hover:border-green-500">
+    <div class="flex flex-col items-center hover:p-1 hover:border-2 hover:border-green-500">
       <img src="https://cdn-icons-png.flaticon.com/128/3135/3135715.png" class="w-8 h-8" />
       <p>Mobile Recharge</p>
     </div>
-    <div class="flex flex-col items-center hover:border-2 hover:border-green-500">
+    <div class="flex flex-col items-center hover:p-1 hover:border-2 hover:border-green-500">
       <img src="https://cdn-icons-png.flaticon.com/128/2089/2089709.png" class="w-8 h-8" />
       <p>Cash Out</p>
     </div>
-    <div class="flex flex-col items-center">
+    <div class="flex flex-col items-center hover:p-1 hover:border-2 hover:border-green-500">
       <img src="https://cdn-icons-png.flaticon.com/128/318/318221.png" class="w-8 h-8" />
       <p>Payment</p>
     </div>
-    <div class="flex flex-col items-center">
+    <div class="flex flex-col items-center hover:p-1 hover:border-2 hover:border-green-500">
       <img src="https://cdn-icons-png.flaticon.com/128/833/833472.png" class="w-8 h-8" />
       <p>অ্যাড মানি</p>
     </div>
-    <div class="flex flex-col items-center">
+    <div class="flex flex-col items-center hover:p-1 hover:border-2 hover:border-green-500">
       <img src="https://cdn-icons-png.flaticon.com/128/1041/1041870.png" class="w-8 h-8" />
       <p>পে বিল</p>
     </div>
-    <div class="flex flex-col items-center rounded-md p-1">
+    <div class="flex flex-col items-center rounded-md p-1 hover:p-1 hover:border-2 hover:border-green-500">
       <img src="https://cdn-icons-png.flaticon.com/128/854/854878.png" class="w-8 h-8" />
       <p>টিকেট</p>
     </div>
-    <div class="flex flex-col items-center">
+    <div class="flex flex-col items-center hover:p-1 hover:border-2 hover:border-green-500">
       <img src="https://cdn-icons-png.flaticon.com/128/1828/1828970.png" class="w-8 h-8" />
       <p>আরো</p>
     </div>
@@ -62,19 +62,19 @@
 
   <!-- My bKash Horizontal Scroll -->
   <div class="bg-white p-4 mt-2">
-    <h2 class="text-sm font-semibold mb-2">আমার বিকাশ</h2>
+    <h2 class="text-sm font-semibold mb-2">My User</h2>
     <div class="flex overflow-x-auto gap-3">
-      <div class="min-w-[80px] flex flex-col items-center">
+      <div class="min-w-[80px] flex flex-col items-center hover:p-1 hover:border-2 hover:border-green-500">
         <img src="https://cdn-icons-png.flaticon.com/128/3135/3135768.png" class="w-10 h-10" />
         <p class="text-xs">Serajus</p>
       </div>
-      <div class="min-w-[80px] flex flex-col items-center">
+      <div class="min-w-[80px] flex flex-col items-center hover:p-1 hover:border-2 hover:border-green-500">
         <img src="https://cdn-icons-png.flaticon.com/128/3135/3135768.png" class="w-10 h-10" />
-        <p class="text-xs">Maa</p>
+        <p class="text-xs">Miraj Hossen</p>
       </div>
-      <div class="min-w-[80px] flex flex-col items-center">
+      <div class="min-w-[80px] flex flex-col items-center hover:p-1 hover:border-2 hover:border-green-500">
         <img src="https://cdn-icons-png.flaticon.com/128/3135/3135768.png" class="w-10 h-10" />
-        <p class="text-xs">01919051487</p>
+        <p class="text-xs">Golok Kumar</p>
       </div>
     </div>
   </div>
@@ -88,11 +88,11 @@
   <div class="fixed bottom-0 left-0 right-0 bg-[#d6006e] text-white flex justify-around py-2 text-xs">
     <div class="flex flex-col items-center">
       <img src="https://cdn-icons-png.flaticon.com/128/1946/1946433.png" class="w-5 h-5" />
-      <p>হোম</p>
+      <p>Home</p>
     </div>
     <div class="flex flex-col items-center">
       <img src="https://cdn-icons-png.flaticon.com/128/565/565340.png" class="w-5 h-5" />
-      <p>QR স্ক্যান</p>
+      <p>Payment</p>
     </div>
     <div class="flex flex-col items-center">
       <img src="https://cdn-icons-png.flaticon.com/128/1077/1077046.png" class="w-5 h-5" />
