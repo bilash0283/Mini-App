@@ -96,7 +96,7 @@
     </div>
     <div class="flex flex-col items-center">
       <img src="https://cdn-icons-png.flaticon.com/128/1077/1077046.png" class="w-5 h-5" />
-      <p>ইনবক্স</p>
+      <p>Inbox</p>
     </div>
   </div>
 
