@@ -100,6 +100,7 @@
     </div>
   </div>
 
+  <??>
 
 
   <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
@@ -111,7 +112,7 @@
 
       button.addEventListener("click", function () {
         icon.classList.remove("animate-spin");
-        text.textContent = "$56.75"; 
+        text.textContent = "56.75"; 
 
         button.disabled = true;
 
