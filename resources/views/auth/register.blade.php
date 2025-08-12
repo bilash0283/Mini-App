@@ -117,7 +117,7 @@
 
         <div class="text-center text-sm text-gray-500">
           <span>I have a Account? </span>
-          <a href="#" class="text-orange-500 font-medium">Login Hear</a>
+          <a href="{{ route('login') }}" class="text-orange-500 font-medium">Login Hear</a>
         </div>
       </form>
 
