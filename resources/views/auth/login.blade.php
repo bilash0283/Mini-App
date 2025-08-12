@@ -48,14 +48,13 @@
 </x-guest-layout>
 
 
-<!-- 
+
     <!doctype html>
     <html lang="bn">
-
     <head>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <title>bKash স্টাইল লগইন পেজ — Tailwind CSS</title>
+        <title>Login Page</title>
         <script src="https://cdn.tailwindcss.com"></script>
         <style>
             /* ছোট কাস্টমাইজেশন */
@@ -186,5 +185,5 @@
         </script>
     </body>
 
-    </html> -->
+    </html> 
 
