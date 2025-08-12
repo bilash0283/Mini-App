@@ -60,8 +60,7 @@
     <img src="{{ asset('assets/app_images/banner.png') }}" class="rounded-md w-full" alt="Ticket Banner" />
   </div>
 
-
-
+  <!-- user caruent balance  -->
   <?php 
     $money = '50.40';
   ?>
