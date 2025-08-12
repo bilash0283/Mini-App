@@ -57,7 +57,6 @@
         <title>Login Page</title>
         <script src="https://cdn.tailwindcss.com"></script>
         <style>
-            /* ছোট কাস্টমাইজেশন */
             .bkash-grad {
                 background: linear-gradient(135deg, #ff3b6b 0%, #ff8a00 100%);
             }
@@ -69,56 +68,25 @@
         </style>
     </head>
 
-    <body class="min-h-screen bg-gray-50 flex items-center justify-center p-6">
-        <div class="max-w-4xl w-full grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
-            <!-- Left: Branding / Welcome -->
-            <div
-                class="hidden md:flex flex-col items-start justify-center space-y-6 p-8 bg-white rounded-3xl shadow-lg">
-                <div class="flex items-center space-x-3">
-                    <div
-                        class="w-12 h-12 rounded-full bkash-grad flex items-center justify-center text-white font-bold text-xl">
-                        bK</div>
-                    <div>
-                        <h1 class="text-2xl font-extrabold text-gray-800">bKash স্টাইল লগইন</h1>
-                        <p class="text-sm text-gray-500">সহজ, দ্রুত ও নিরাপদে আপনার পেমেন্ট অ্যাক্সেস করুন</p>
-                    </div>
-                </div>
-
-                <div class="mt-4 text-gray-600">
-                    <p class="leading-relaxed">এই পেজটি Tailwind CSS দিয়ে ডিজাইন করা হয়েছে — সুন্দর, রেসপন্সিভ এবং
-                        মোবাইল-ফ্রেন্ডলি। নিচে লগইন ফর্মে আপনার ফোন নম্বর ও ওটিপি/পাসওয়ার্ড দিয়ে লগইন করুন।</p>
-                </div>
-
-                <ul class="space-y-3 mt-4 text-sm text-gray-600">
-                    <li>• দ্রুত ওটিপি লগইন</li>
-                    <li>• পাসওয়ার্ড নিরাপত্তা</li>
-                    <li>• সহজ অ্যাকাউন্ট রিকভারি</li>
-                </ul>
-
-                <div class="mt-6 w-full">
-                    <img src="https://images.unsplash.com/photo-1556740738-b6a63e27c4df?auto=format&fit=crop&w=800&q=60"
-                        alt="payment" class="rounded-xl shadow-md w-full object-cover h-48" />
-                </div>
-            </div>
-
-            <!-- Right: Login Card -->
-            <div class="bg-white rounded-3xl shadow-2xl p-8 md:p-12">
+    <body class="min-h-screen bg-gray-50 flex items-center justify-center ">
+            
+            <div class="bg-white rounded-3xl shadow-2xl w-4/12 px-8 py-5 mx-auto my-10">
                 <div class="flex items-center justify-between mb-6">
                     <div class="flex items-center space-x-3">
                         <div
                             class="w-12 h-12 rounded-full bkash-grad flex items-center justify-center text-white font-extrabold text-lg">
                             bK</div>
                         <div>
-                            <h2 class="text-xl font-bold text-gray-800">অ্যাকাউন্টে প্রবেশ করুন</h2>
-                            <p class="text-sm text-gray-500">ফোন নম্বর ও ওটিপি/পাসওয়ার্ড দিয়ে লগইন করুন</p>
+                            <h1 class="text-2xl font-extrabold text-gray-800">Login Hear</h1>
+                            <p class="text-sm text-gray-500">Login Hear to Earn Money</p>
                         </div>
                     </div>
-                    <div class="text-sm text-gray-400">শক্তিশালী এনক্রিপশন</div>
+                    <div class="text-sm text-gray-400"></div>
                 </div>
 
-                <form class="space-y-4" onsubmit="event.preventDefault(); alert('লগইন পোস্ট সিমুলেট করা হয়েছে।')">
+                <form class="space-y-4" >
                     <div>
-                        <label class="text-sm text-gray-600 mb-1 block">ফোন নম্বর</label>
+                        <label class="text-sm text-gray-600 mb-1 block">Phone or Email</label>
                         <div class="flex items-center bg-gray-50 border border-gray-200 rounded-lg overflow-hidden">
                             <span class="px-3 text-sm text-gray-600">+880</span>
                             <input type="tel" required placeholder="1XXXXXXXXX"
@@ -170,7 +138,6 @@
                     </div>
                 </div>
             </div>
-        </div>
 
         <script>
             // হালকা ইন্টারঅ্যাকশন: Enter চাপলে সাবমিট সিমুলেট
