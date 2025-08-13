@@ -20,7 +20,7 @@
     <div class="bg-white rounded-3xl shadow-2xl px-5 py-5 mx-auto my-10">
         <div class="flex items-center justify-between mb-6">
             <div class="flex items-center space-x-3">
-                <div class="w-12 h-12 rounded-full bkash-grad flex items-center justify-center text-white font-extrabold text-lg">bK</div>
+                <div class="w-12 h-12 rounded-full bkash-grad flex items-center justify-center text-white font-extrabold text-lg"><img src="{{ asset('assets/app_images/app_logo.png') }}" alt=""></div>
                 <div>
                     <h1 class="text-2xl font-extrabold text-gray-800">Login Here</h1>
                     <p class="text-sm text-gray-500">Login here to earn money</p>
@@ -96,3 +96,20 @@
     </div>
 </body>
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

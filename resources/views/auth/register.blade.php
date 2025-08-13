@@ -16,7 +16,7 @@
 
     <div class="bg-white rounded-3xl shadow-2xl px-5 py-5 mx-auto my-10">
       <div class="flex items-center mb-6">
-        <div class="w-12 h-12 rounded-full bkash-grad flex items-center justify-center text-white font-extrabold text-lg">bK</div>
+        <div class="w-12 h-12 rounded-full bkash-grad flex items-center justify-center text-white font-extrabold text-lg"><img src="{{ asset('assets/app_images/app_logo.png') }}" alt=""></div>
         <div class="ml-3">
           <h2 class="text-xl font-bold text-gray-800">Create a New Account</h2>
           <p class="text-sm text-gray-500">Please fill in the following information</p>
@@ -73,7 +73,7 @@
 
         <div class="text-center text-sm text-gray-500">
           <span>Already have an account? </span>
-          <a href="{{ route('login') }}" class="text-orange-500 font-medium">Login Here</a>
+          <a href="{{ route('home') }}" class="text-orange-500 font-medium">Login Here</a>
         </div>
       </form>
 
