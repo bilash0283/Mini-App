@@ -109,7 +109,12 @@
     </div>
     <div class="flex flex-col items-center">
       <img src="https://cdn-icons-png.flaticon.com/128/1077/1077046.png" class="w-5 h-5" />
-      <p>Logout</p>
+      <form method="POST" action="{{ route('logout') }}">
+          @csrf
+          <button type="submit" class="text-red-500 hover:text-red-700">
+              <span class="text-white">Logout</span>
+          </button>
+      </form>
     </div>
   </div>
 

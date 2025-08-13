@@ -70,7 +70,7 @@
             <div>
                 <button type="submit"
                     class="w-full py-3 rounded-lg bkash-grad text-white font-semibold shadow hover:shadow-lg transform hover:-translate-y-0.5 transition">
-                    লগইন
+                    Login
                 </button>
             </div>
 
