@@ -1,15 +1,12 @@
 <?php
 
 use App\Http\Controllers\ProfileController;
+use App\Models\User;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     return view('welcome');
 })->name('home');
-
-// Route::get('/dashboard', function () {
-//     return view('dashboard');
-// })->middleware(['auth', 'verified'])->name('dashboard');
 
 Route::get('/dashboard', function () {
     $user = Auth::user();
@@ -17,7 +14,8 @@ Route::get('/dashboard', function () {
     if ($user->user_type === 'admin') {
         return view('dashboard');
     } elseif ($user->user_type === 'user') {
-        return view('backend-layouts.user-dashboard');
+        $users = User::where('user_type', 'user')->get();
+        return view('backend-layouts.user-dashboard', ['users' => $users]);
     } else {
         abort(403, 'Unauthorized');
     }

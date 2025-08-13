@@ -13,7 +13,8 @@
     <div class="flex items-center gap-3">
       <img src="{{ asset('assets/app_images/demo_profile.png') }}" class="w-10 h-10 rounded-full border-2 border-white" />
       <div>
-        <p class="text-sm font-bold">Abdul Hakim</p>
+        {{ dd($users) }}
+        <p class="text-sm font-bold"></p>
         <button id="check-balance-btn" class="text-[11px] bg-white text-[#d6006e] px-2 py-[2px] rounded-full mt-1 flex items-center">
           <i class="fas fa-dollar-sign animate-spin mr-1 text-[10px]"></i>
           <span>Tap to check balance</span>
