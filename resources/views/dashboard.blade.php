@@ -19,6 +19,34 @@
         <nav class="mt-6">
             <a href="{{ route('dashboard') }}" class="block px-6 py-3 text-gray-700 hover:bg-gray-200 rounded">Dashboard</a>
             <a href="{{ route('profile.show') }}" class="block px-6 py-3 text-gray-700 hover:bg-gray-200 rounded">Profile</a>
+            
+            <div x-data="{ open: false }" class="space-y-1">
+                <!-- Main Category Button -->
+                <button @click="open = !open" 
+                    class="w-full flex items-center justify-between px-6 py-3 text-gray-700 hover:bg-gray-200 rounded">
+                    <span>Category</span>
+                    <!-- Dropdown Icon -->
+                    <svg :class="{'rotate-180': open}" class="w-5 h-5 text-gray-500 transition-transform duration-200" 
+                        fill="none" stroke="currentColor" viewBox="0 0 24 24" 
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" 
+                            d="M19 9l-7 7-7-7"></path>
+                    </svg>
+                </button>
+
+                <!-- Dropdown Links -->
+                <div x-show="open" x-transition class="pl-6 space-y-1">
+                    <a href="{{ route('profile.show') }}" 
+                        class="block px-6 py-2 text-gray-600 hover:bg-gray-100 rounded">
+                        Add Category
+                    </a>
+                    <a href="{{ route('profile.show') }}" 
+                        class="block px-6 py-2 text-gray-600 hover:bg-gray-100 rounded">
+                        Manage Category
+                    </a>
+                </div>
+            </div>
+
             <form method="POST" action="{{ route('logout') }}">
                 @csrf
                 <button type="submit" class="w-full text-left px-6 py-3 text-red-600 hover:bg-red-100 rounded">Logout</button>
@@ -46,6 +74,32 @@
         <div id="mobile-menu" class="md:hidden hidden bg-white shadow-md">
             <a href="{{ route('dashboard') }}" class="block px-4 py-3 hover:bg-gray-200">Dashboard</a>
             <a href="{{ route('profile.show') }}" class="block px-4 py-3 hover:bg-gray-200">Profile</a>
+            <div x-data="{ open: false }" class="space-y-1">
+                <!-- Main Category Button -->
+                <button @click="open = !open" 
+                    class="w-full flex items-center justify-between px-6 py-3 text-gray-700 hover:bg-gray-200 rounded">
+                    <span>Category</span>
+                    <!-- Dropdown Icon -->
+                    <svg :class="{'rotate-180': open}" class="w-5 h-5 text-gray-500 transition-transform duration-200" 
+                        fill="none" stroke="currentColor" viewBox="0 0 24 24" 
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" 
+                            d="M19 9l-7 7-7-7"></path>
+                    </svg>
+                </button>
+
+                <!-- Dropdown Links -->
+                <div x-show="open" x-transition class="pl-6 space-y-1">
+                    <a href="{{ route('profile.show') }}" 
+                        class="block px-6 py-2 text-gray-600 hover:bg-gray-100 rounded">
+                        Add Category
+                    </a>
+                    <a href="{{ route('profile.show') }}" 
+                        class="block px-6 py-2 text-gray-600 hover:bg-gray-100 rounded">
+                        Manage Category
+                    </a>
+                </div>
+            </div>
             <form method="POST" action="{{ route('logout') }}">
                 @csrf
                 <button type="submit" class="w-full text-left px-4 py-3 text-red-600 hover:bg-red-100">Logout</button>
@@ -67,6 +121,9 @@
     </div>
 </div>
 
+
+<!-- Alpine.js Script -->
+<script src="//unpkg.com/alpinejs" defer></script>
 <script>
     // Mobile menu toggle
     const menuButton = document.getElementById('mobile-menu-button');
