@@ -3,6 +3,7 @@
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\UserController;
 use App\Http\Controllers\BlogController;
+use App\Models\Category;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\Auth;
 use App\Models\User;
@@ -41,6 +42,14 @@ Route::middleware(['auth'])->group(function () {
     Route::get('/users/{user}/edit', [UserController::class, 'edit'])->name('users.edit');
     Route::put('/users/{user}', [UserController::class, 'update'])->name('users.update');
     Route::delete('/users/{user}', [UserController::class, 'destroy'])->name('users.destroy');
+
+    // category manage 
+    Route::get('/category', [Category::class, 'index'])->name('category.index');
+    // Route::get('/blogs/create', [BlogController::class, 'create'])->name('blogs.create');
+    // Route::post('/blogs', [BlogController::class, 'store'])->name('blogs.store');
+    // Route::get('/blogs/{blog}/edit', [BlogController::class, 'edit'])->name('blogs.edit');
+    // Route::put('/blogs/{blog}', [BlogController::class, 'update'])->name('blogs.update');
+    // Route::delete('/blogs/{blog}', [BlogController::class, 'destroy'])->name('blogs.destroy');
 
     // Blog management
     // Route::get('/blogs', [BlogController::class, 'index'])->name('blogs.index');
