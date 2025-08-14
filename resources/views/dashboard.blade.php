@@ -30,7 +30,10 @@
     <div class="flex-1 flex flex-col overflow-auto">
         <!-- Mobile header -->
         <header class="md:hidden flex items-center justify-between bg-white p-4 shadow">
-            <span class="text-xl font-bold">GSC Dashboard</span>
+            <div class="text-xl font-bold border-b flex col-span-2 items-center">
+                <img src="{{ asset('assets/app_images/app_logo.png') }}" class="w-10 h-10 rounded-full" alt=""> 
+                <h4>Dashboard</h4>
+            </div>
             <button id="mobile-menu-button" class="text-gray-700 focus:outline-none">
                 <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
