@@ -1,10 +1,9 @@
-<!-- resources/views/dashboard.blade.php -->
 <!DOCTYPE html>
 <html lang="bn">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dashboard - GSC</title>
+    <title>Admin Dahboard</title>
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body class="bg-gray-100 font-sans">
@@ -13,7 +12,10 @@
 
     <!-- Sidebar -->
     <aside class="w-64 bg-white shadow-md hidden md:block">
-        <div class="p-6 text-xl font-bold border-b">GSC Dashboard</div>
+        <div class="p-6 text-xl font-bold border-b flex col-span-2 items-center">
+            <img src="{{ asset('assets/app_images/app_logo.png') }}" class="w-10 h-10 rounded-full" alt=""> 
+            <h4>Dashboard</h4>
+        </div>
         <nav class="mt-6">
             <a href="{{ route('dashboard') }}" class="block px-6 py-3 text-gray-700 hover:bg-gray-200 rounded">Dashboard</a>
             <a href="{{ route('profile.show') }}" class="block px-6 py-3 text-gray-700 hover:bg-gray-200 rounded">Profile</a>
