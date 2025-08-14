@@ -8,6 +8,6 @@ class Category extends Model
 {
     public function index()
     {
-        return "this is a category Index page";
+        return view('admin.category.category-manage');
     }
 }
