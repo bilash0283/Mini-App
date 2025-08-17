@@ -14,6 +14,10 @@
                 <a href="{{ route('profile.edit') }}" class="text-blue-500 hover:underline mt-4 inline-block">Edit Profile</a>
             </div>
         </main>
+
+
+
+        
     </div>
 </div>
 
