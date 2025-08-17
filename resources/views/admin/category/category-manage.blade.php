@@ -6,28 +6,47 @@
                 <h1 class="text-2xl font-bold mb-6">Category Management</h1>
             </div>
 
-            <div>
-                <table>
-                    <thead>
-                        <tr>
-                            <th>SL</th>
-                        </tr>
-                        <tr>
-                            <th>Name</th>
-                        </tr>
+            <div class="w-full max-w-4xl">
+                <h1 class="text-2xl font-semibold mb-4">User Table</h1>
+
+                <div class="overflow-x-auto rounded-lg shadow-lg">
+                <table class="w-full text-sm text-left border-collapse">
+                    <thead class="bg-gray-800 text-gray-300 uppercase text-xs">
+                    <tr>
+                        <th class="px-4 py-3">#</th>
+                        <th class="px-4 py-3">Name</th>
+                        <th class="px-4 py-3">Email</th>
+                        <th class="px-4 py-3">Role</th>
+                        <th class="px-4 py-3">Status</th>
+                    </tr>
                     </thead>
-                    <tbody>
-                        <tr>
-                            <td>1</td>
-                        </tr>
-                        <tr>
-                            <td>Bilash</td>
-                        </tr>
+                    <tbody class="divide-y divide-gray-700">
+                    <tr class="hover:bg-gray-800">
+                        <td class="px-4 py-3">1</td>
+                        <td class="px-4 py-3">Arifa Khan</td>
+                        <td class="px-4 py-3">arifa.khan@example.com</td>
+                        <td class="px-4 py-3">Admin</td>
+                        <td class="px-4 py-3 text-green-400">Active</td>
+                    </tr>
+                    <tr class="hover:bg-gray-800">
+                        <td class="px-4 py-3">2</td>
+                        <td class="px-4 py-3">Mehedi Hasan</td>
+                        <td class="px-4 py-3">mehedi.hasan@example.com</td>
+                        <td class="px-4 py-3">Editor</td>
+                        <td class="px-4 py-3 text-yellow-400">Idle</td>
+                    </tr>
+                    <tr class="hover:bg-gray-800">
+                        <td class="px-4 py-3">3</td>
+                        <td class="px-4 py-3">Nusrat Jahan</td>
+                        <td class="px-4 py-3">nusrat.jahan@example.com</td>
+                        <td class="px-4 py-3">Viewer</td>
+                        <td class="px-4 py-3 text-red-400">Inactive</td>
+                    </tr>
                     </tbody>
                 </table>
+                </div>
             </div>
-
-
+            
         </main>
 
     <!-- Alpine.js Script -->
