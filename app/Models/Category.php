@@ -10,4 +10,11 @@ class Category extends Model
     {
         return view('admin.category.category-manage');
     }
+
+    public function create()
+    {
+        return view('admin.category.category-add');
+    }
+
+
 }

@@ -36,7 +36,7 @@
 
                 <!-- Dropdown Links -->
                 <div x-show="open" x-transition class="pl-6 space-y-1">
-                    <a href="{{ route('profile.show') }}" 
+                    <a href="{{ route('category.create') }}" 
                         class="block px-6 py-2 text-gray-600 hover:bg-gray-100 rounded">
                         Add Category
                     </a>
