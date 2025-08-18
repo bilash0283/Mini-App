@@ -11,11 +11,11 @@
                 <table class="w-full text-sm text-left border-collapse">
                     <thead class="bg-gray-800 text-gray-300 uppercase text-xs">
                     <tr>
-                        <th class="px-4 py-3">#</th>
+                        <th class="px-4 py-3">SL</th>
                         <th class="px-4 py-3">Name</th>
-                        <th class="px-4 py-3">Email</th>
-                        <th class="px-4 py-3">Role</th>
+                        <th class="px-4 py-3">Description</th>
                         <th class="px-4 py-3">Status</th>
+                        <th class="px-4 py-3">Action</th>
                     </tr>
                     </thead>
                     <tbody class="divide-y divide-gray-700">
@@ -23,8 +23,13 @@
                             <td class="px-4 py-3">1</td>
                             <td class="px-4 py-3">Arifa Khan</td>
                             <td class="px-4 py-3">arifa.khan@example.com</td>
-                            <td class="px-4 py-3">Admin</td>
                             <td class="px-4 py-3 text-green-400">Active</td>
+                            <td class="px-4 py-3">
+                                <div class="">
+                                    <a href="" class="bg-red-700 px-2 py-1 text-white">Edit</a>
+                                    <a href="">Delete</a>
+                                </div>
+                            </td>
                         </tr>
                     </tbody>
                 </table>
