@@ -16,5 +16,10 @@ class Category extends Model
         return view('admin.category.category-add');
     }
 
+    public function store()
+    {
+
+    }
+
 
 }
