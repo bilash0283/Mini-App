@@ -7,7 +7,7 @@
     </div>
 
     <div class="w-full ">
-        <form action="#" method="POST" class="mx-auto  max-w-xl">
+        <form action="{{ route('category.store') }}" method="POST" class="mx-auto  max-w-xl">
             <div class="grid grid-cols-1 gap-x-8 gap-y-6 sm:grid-cols-2">
                 <div class="sm:col-span-2">
                     <label for="first-name" class="block text-sm/6 font-semibold text-black">Category name</label>

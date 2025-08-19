@@ -26,8 +26,8 @@
                             <td class="px-4 py-3 text-green-400">Active</td>
                             <td class="px-4 py-3">
                                 <div class="">
-                                    <a href="" class="bg-red-700 px-2 py-1 text-white">Edit</a>
-                                    <a href="">Delete</a>
+                                    <a href="" class="bg-blue-500 px-2 py-1 text-white rounded-md">Edit</a>
+                                    <a href="" class="bg-red-600 px-2 py-1 text-white rounded-md">Delete</a>
                                 </div>
                             </td>
                         </tr>
