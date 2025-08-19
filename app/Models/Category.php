@@ -16,9 +16,9 @@ class Category extends Model
         return view('admin.category.category-add');
     }
 
-    public function store()
+    public function store(Request $request)
     {
-
+        dd($request);
     }
 
 
