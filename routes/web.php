@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\CategoryController;
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\UserController;
 use App\Http\Controllers\BlogController;
@@ -44,9 +45,9 @@ Route::middleware(['auth'])->group(function () {
     Route::delete('/users/{user}', [UserController::class, 'destroy'])->name('users.destroy');
 
     // category manage 
-    Route::get('/category', [Category::class, 'index'])->name('category.index');
-    Route::get('category/create', [Category::class, 'create'])->name('category.create');
-    Route::post('Categotory/Store', [Category::class, 'store'])->name('category.store');
+    Route::get('/category', [CategoryController::class, 'index'])->name('category.index');
+    Route::get('category/create', [CategoryController::class, 'create'])->name('category.create');
+    Route::post('Categotory/Store', [CategoryController::class, 'store'])->name('category.store');
     // Route::get('/blogs/{blog}/edit', [BlogController::class, 'edit'])->name('blogs.edit');
     // Route::put('/blogs/{blog}', [BlogController::class, 'update'])->name('blogs.update');
     // Route::delete('/blogs/{blog}', [BlogController::class, 'destroy'])->name('blogs.destroy');
