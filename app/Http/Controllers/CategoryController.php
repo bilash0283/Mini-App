@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Category;
 use Illuminate\Http\Request;
 
 class CategoryController extends Controller
@@ -16,9 +17,25 @@ class CategoryController extends Controller
         return view('admin.category.category-add');
     }
 
-    public function store()
+    public function store(Request $request)
     {
-        echo "this is a  category store ";
+        $request->validator([
+            'name' => 'required',
+            'description' => 'required',
+            'status' => 'required'            
+        ]);
+
+        $category = new Category();
+
+        $category->name = $request->name;
+        $category->description = $request->description;
+        $category->status = $request->status;
+        $category->save();
+
+        return redirect()->route('category.index')->with('success','Category Create Successfull');
+
     }
+
+
 
 }
