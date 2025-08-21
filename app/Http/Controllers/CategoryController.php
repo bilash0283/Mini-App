@@ -21,15 +21,10 @@ class CategoryController extends Controller
 
     public function store(Request $request)
     {
-        $request = validator([
-            'name' => 'required',
-            'description' => 'required',
-            'status' => 'required'            
-        ]);
-
+        
         $category = new Category();
 
-        $category->name = $request->name;
+        $category->cat_name = $request->cat_name;
         $category->description = $request->description;
         $category->status = $request->status;
         $category->save();
