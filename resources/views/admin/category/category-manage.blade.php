@@ -6,8 +6,9 @@
                 <h1 class="text-2xl font-bold mb-6">Category Management</h1>
             </div>
 
-            <h5 class="text-green-700">@session('success')
-            @endsession</h5>
+            @if (session('success'))
+                <h5 class="text-green-700 my-5">{{ session('success') }}</h5>
+            @endif
 
             <div class="w-full ">
                 <div class="overflow-x-auto rounded-lg shadow-lg">

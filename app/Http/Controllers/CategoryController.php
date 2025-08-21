@@ -22,14 +22,11 @@ class CategoryController extends Controller
     public function store(Request $request)
     {
 
-        echo $request->description;
-        exit();
-
         $category = new Category();
 
-        $category->cat_name = 'Category Name';
-        $category->description = 'Category Description';
-        $category->status = 1;
+        $category->cat_name = $request->name;;
+        $category->description = $request->description;;
+        $category->status = $request->status;
         $category->save();
 
         return redirect()->route('category.index')->with('success','Category Create Successfull');
