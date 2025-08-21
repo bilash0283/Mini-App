@@ -2,14 +2,16 @@
 
 namespace App\Http\Controllers;
 
+use App\Http\Middleware\HandleInertiaRequests;
 use App\Models\Category;
-use Illuminate\Http\Request;
+use Symfony\Component\HttpFoundation\Request;
+
 
 class CategoryController extends Controller
 {
     public function index()
     {
-        return view('admin.category.category-manage');
+        return view('admin.category.category-manage');    
     }
 
     public function create()
@@ -19,7 +21,7 @@ class CategoryController extends Controller
 
     public function store(Request $request)
     {
-        $request->validator([
+        $request = validator([
             'name' => 'required',
             'description' => 'required',
             'status' => 'required'            

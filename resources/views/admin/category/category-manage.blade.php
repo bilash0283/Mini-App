@@ -6,6 +6,9 @@
                 <h1 class="text-2xl font-bold mb-6">Category Management</h1>
             </div>
 
+            <h5 class="text-green-700">@session('success')
+            @endsession</h5>
+
             <div class="w-full ">
                 <div class="overflow-x-auto rounded-lg shadow-lg">
                 <table class="w-full text-sm text-left border-collapse">
