@@ -21,7 +21,10 @@ class CategoryController extends Controller
 
     public function store(Request $request)
     {
-        
+
+        dd($request);
+        exit();
+
         $category = new Category();
 
         $category->cat_name = 'Category Name';
