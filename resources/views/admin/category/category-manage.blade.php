@@ -26,7 +26,7 @@
                         @foreach ($categories as $category)
                             <tr class="hover:bg-gray-800 hover:text-white">
                                 <td class="px-4 py-3">{{ $category->id }}</td>
-                                <td class="px-4 py-3">{{ $category->name }}</td>
+                                <td class="px-4 py-3">{{ $category->cat_name }}</td>
                                 <td class="px-4 py-3">{{ $category->description }}</td>
                                 <td class="px-4 py-3 {{ $category->status == 1 ? 'text-green-400' : 'text-red-500' }}">{{ $category->status == 1 ? 'Active' : 'Inactive' }}</td>
                                 <td class="px-4 py-3">
