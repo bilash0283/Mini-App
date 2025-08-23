@@ -14,7 +14,7 @@
                     <label for="first-name" class="block text-sm/6 font-semibold text-black">Category name</label>
                     <div class="mt-2.5">
                         <input id="first-name" type="text" name="name" autocomplete="given-name"
-                            class="block w-full rounded-md bg-black/5 px-3.5 py-2 text-base text-black outline-1 -outline-offset-1 outline-black/10 placeholder:text-gray-500 focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-500" />
+                            value="{{ $cat_item->cat_name }}" class="block w-full rounded-md bg-black/5 px-3.5 py-2 text-base text-black outline-1 -outline-offset-1 outline-black/10 placeholder:text-gray-500 focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-500" />
                     </div>
                 </div>
                 
@@ -22,7 +22,7 @@
                     <label for="message" class="block text-sm/6 font-semibold text-black">Description</label>
                     <div class="mt-2.5">
                         <textarea id="message" name="description" rows="4"
-                            class="block w-full rounded-md bg-black/5 px-3.5 py-2 text-base text-black outline-1 -outline-offset-1 outline-black/10 placeholder:text-gray-500 focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-500"></textarea>
+                            class="block w-full rounded-md bg-black/5 px-3.5 py-2 text-base text-black outline-1 -outline-offset-1 outline-black/10 placeholder:text-gray-500 focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-500">{{ $cat_item->description }}</textarea>
                     </div>
                 </div>
 
@@ -31,8 +31,8 @@
                     <div class="mt-2.5">
                         <select name="status" class="block w-full rounded-md bg-black/5 px-3.5 py-2 text-base text-black outline-1 -outline-offset-1 outline-black/10 placeholder:text-gray-500 focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-500" id="">
                             <option selected disabled>Select One</option>
-                            <option value="1">Active</option>
-                            <option value="2">Inactive</option>
+                            <option value="1" {{ $cat_item->status == 1 ? 'selected' : '' }}>Active</option>
+                            <option value="2" {{ $cat_item->status == 2 ? 'selected' : '' }}>Inactive</option>
                         </select>
                     </div>
                 </div>
@@ -40,7 +40,7 @@
             </div>
             <div class="mt-10">
                 <button type="submit"
-                    class="block w-full rounded-md bg-indigo-500 px-3.5 py-2.5 text-center text-sm font-semibold text-black shadow-xs hover:bg-indigo-400 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-500">Add</button>
+                    class="block w-full rounded-md bg-indigo-500 px-3.5 py-2.5 text-center text-sm font-semibold text-black shadow-xs hover:bg-indigo-400 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-500">Update</button>
             </div>
         </form>
     </div>
