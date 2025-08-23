@@ -34,9 +34,9 @@ class CategoryController extends Controller
 
     }
 
-    public function edit()
+    public function edit($id)
     {
-        
+        echo $id;
     }
 
 
