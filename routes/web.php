@@ -50,7 +50,7 @@ Route::middleware(['auth'])->group(function () {
     Route::post('Categotory/Store', [CategoryController::class, 'store'])->name('category.store');
     Route::get('/Category/Edit/{id}', [CategoryController::class, 'edit'])->name('category.edit');
     Route::post('/Category/Udate/{id}', [CategoryController::class, 'update'])->name('category.update');
-    // Route::delete('/blogs/{blog}', [BlogController::class, 'destroy'])->name('blogs.destroy');
+    Route::get('/Category/Delete/{id}', [CategoryController::class, 'delete'])->name('category.delete');
 
     // Blog management
     // Route::get('/blogs', [BlogController::class, 'index'])->name('blogs.index');

@@ -32,13 +32,14 @@
                                 <td class="px-4 py-3">
                                     <div class="">
                                         <a href="{{ route('category.edit',['id' => $category->id]) }}" class="bg-blue-500 px-2 py-1 text-white rounded-md">Edit</a>
-                                        <a href="{{ route('category.delete') }}" onclick="return confirm('Are You Sure to Delete it?')" class="bg-red-600 px-2 py-1 text-white rounded-md">Delete</a>
+                                        <a href="{{ route('category.delete',['id' => $category->id]) }}" onclick="return confirm('Are You Sure to Delete it?')" class="bg-red-600 px-2 py-1 text-white rounded-md">Delete</a>
                                     </div>
                                 </td>
                             </tr>
                         @endforeach
                     </tbody>
                 </table>
+                {{ $categories->links() }}
                 </div>
             </div>
             
