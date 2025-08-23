@@ -41,9 +41,17 @@ class CategoryController extends Controller
     }
 
 
-    public function update($id)
+    public function update(Request $request, $id)
     {
-        Category::findOrFail($id);
+        $Category = Category::findOrFail($id);
+
+        $Category->cat_name = $request->name;
+        $Category->description = $request->description;
+        $Category->status = $request->status;
+        $Category->save();
+
+        return redirect()->route('category.index')->with('success','Category Update Successfull');
+
     }
 
 
