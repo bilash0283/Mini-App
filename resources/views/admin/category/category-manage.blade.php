@@ -28,7 +28,7 @@
                                 <td class="px-4 py-3">{{ $category->id }}</td>
                                 <td class="px-4 py-3">{{ $category->name }}</td>
                                 <td class="px-4 py-3">{{ $category->description }}</td>
-                                <td class="px-4 py-3 text-green-400">{{ $category->status == 1 ? 'Active' : 'Inactive' }}</td>
+                                <td class="px-4 py-3 {{ $category->status == 1 ? 'text-green-400' : 'text-red-500' }}">{{ $category->status == 1 ? 'Active' : 'Inactive' }}</td>
                                 <td class="px-4 py-3">
                                     <div class="">
                                         <a href="" class="bg-blue-500 px-2 py-1 text-white rounded-md">Edit</a>
