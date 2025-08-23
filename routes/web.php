@@ -48,7 +48,7 @@ Route::middleware(['auth'])->group(function () {
     Route::get('/category', [CategoryController::class, 'index'])->name('category.index');
     Route::get('category/create', [CategoryController::class, 'create'])->name('category.create');
     Route::post('Categotory/Store', [CategoryController::class, 'store'])->name('category.store');
-    // Route::get('/blogs/{blog}/edit', [BlogController::class, 'edit'])->name('blogs.edit');
+    Route::get('/Category/Edit/{id}', [CategoryController::class, 'edit'])->name('category.edit');
     // Route::put('/blogs/{blog}', [BlogController::class, 'update'])->name('blogs.update');
     // Route::delete('/blogs/{blog}', [BlogController::class, 'destroy'])->name('blogs.destroy');
 
