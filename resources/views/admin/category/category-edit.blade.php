@@ -3,11 +3,11 @@
 <!-- Page content -->
 <main class="p-6">
     <div class="w-full py-4 bg-slate-300 px-10 mb-5 rounded-sm">
-        <h1 class="text-2xl font-bold mb-6">Category Management</h1>
+        <h1 class="text-2xl font-bold mb-6">Category Edit</h1>
     </div>
 
     <div class="w-full ">
-        <form action="" method="POST" class="mx-auto  max-w-xl">
+        <form action="{{ route('category.update',['id' => $cat_item->id]) }}" method="POST" class="mx-auto  max-w-xl">
             @csrf
             <div class="grid grid-cols-1 gap-x-8 gap-y-6 sm:grid-cols-2">
                 <div class="sm:col-span-2">

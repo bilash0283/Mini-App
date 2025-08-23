@@ -41,5 +41,11 @@ class CategoryController extends Controller
     }
 
 
+    public function update($id)
+    {
+        Category::findOrFail($id);
+    }
+
+
 
 }

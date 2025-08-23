@@ -49,7 +49,7 @@ Route::middleware(['auth'])->group(function () {
     Route::get('category/create', [CategoryController::class, 'create'])->name('category.create');
     Route::post('Categotory/Store', [CategoryController::class, 'store'])->name('category.store');
     Route::get('/Category/Edit/{id}', [CategoryController::class, 'edit'])->name('category.edit');
-    // Route::put('/blogs/{blog}', [BlogController::class, 'update'])->name('blogs.update');
+    Route::post('/Category/Udate/{id}', [CategoryController::class, 'update'])->name('category.update');
     // Route::delete('/blogs/{blog}', [BlogController::class, 'destroy'])->name('blogs.destroy');
 
     // Blog management
