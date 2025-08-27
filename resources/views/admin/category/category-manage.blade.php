@@ -42,7 +42,7 @@
                 {{ $categories->links() }}
                 </div>
             </div>
-            
+            <!-- category mage page exit done  -->
         </main>
 
     <!-- Alpine.js Script -->
