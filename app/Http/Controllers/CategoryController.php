@@ -62,6 +62,8 @@ class CategoryController extends Controller
         return redirect()->route('category.index')->with('success','Category Delete Successfull');
     }
 
+    //category almost done
+
 
 
 }
