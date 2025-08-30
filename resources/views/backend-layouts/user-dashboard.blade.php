@@ -30,10 +30,8 @@
   <!-- Grid Menu -->
   <div class="bg-white grid grid-cols-4 gap-4 p-4 text-center text-sm">
     <div class="flex flex-col items-center hover:p-1 hover:border-2 hover:border-green-500 ">
-      <a href="#" class="flex col-span-1 items-center justify-center">
         <img src="https://cdn-icons-png.flaticon.com/128/1828/1828817.png" class="w-8 h-8" />
         <p>Referral</p>
-      </a>
     </div>
     <div class="flex flex-col items-center hover:p-1 hover:border-2 hover:border-green-500">
       <img src="https://cdn-icons-png.flaticon.com/128/847/847969.png" class="w-8 h-8" />
@@ -94,9 +92,6 @@
   <?php 
     $money = '50.40';
   ?>
-
-
-
 
 
 
