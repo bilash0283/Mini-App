@@ -27,7 +27,6 @@
     <img src="{{ asset('assets/app_images/app_logo.png') }}" class="w-20 h-20" alt="this is logo" />
   </div>
 
-
   <!-- Grid Menu -->
   <div class="bg-white grid grid-cols-4 gap-4 p-4 text-center text-sm">
     <div class="flex flex-col items-center hover:p-1 hover:border-2 hover:border-green-500 ">
@@ -104,8 +103,10 @@
   <!-- Bottom Nav -->
   <div class="fixed bottom-0 left-0 right-0 bg-[#d6006e] text-white flex justify-around py-2 text-xs">
     <div class="flex flex-col items-center">
-      <img src="https://cdn-icons-png.flaticon.com/128/1946/1946433.png" class="w-5 h-5" />
-      <p>Home</p>
+      <a href="{{ route('dashboard') }}">
+        <img src="https://cdn-icons-png.flaticon.com/128/1946/1946433.png" class="w-5 h-5" />
+        <p>Home</p>
+      </a>
     </div>
     <div class="flex flex-col items-center">
       <img src="https://cdn-icons-png.flaticon.com/128/565/565340.png" class="w-5 h-5" />
