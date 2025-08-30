@@ -1,4 +1,5 @@
 <html lang="bn">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -6,15 +7,18 @@
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
+
 <body class="bg-[#f2f2f2] text-gray-800">
 
   <!-- Top Bar -->
   <div class="bg-[#d6006e] text-white px-4 py-3 flex items-center justify-between ">
     <div class="flex items-center gap-3">
-      <img src="{{ asset('assets/app_images/demo_profile.png') }}" class="w-10 h-10 rounded-full border-2 border-white" />
+      <img src="{{ asset('assets/app_images/demo_profile.png') }}"
+        class="w-10 h-10 rounded-full border-2 border-white" />
       <div>
         <p class="text-sm font-bold">{{ Auth::user()->name }}</p>
-        <button id="check-balance-btn" class="text-[11px] bg-white text-[#d6006e] px-2 py-[2px] rounded-full mt-1 flex items-center">
+        <button id="check-balance-btn"
+          class="text-[11px] bg-white text-[#d6006e] px-2 py-[2px] rounded-full mt-1 flex items-center">
           <i class="fas fa-dollar-sign animate-spin mr-1 text-[10px]"></i>
           <span>Tap to check balance</span>
         </button>
@@ -29,38 +33,39 @@
     <div class="flex flex-col items-center hover:p-1 hover:border-2 hover:border-green-500 ">
       <a href="#" class="flex col-span-1 items-center justify-center">
         <img src="https://cdn-icons-png.flaticon.com/128/1828/1828817.png" class="w-8 h-8" />
-        <p>Add User</p>
+        <p>Referral</p>
       </a>
     </div>
     <div class="flex flex-col items-center hover:p-1 hover:border-2 hover:border-green-500">
-      <img src="https://cdn-icons-png.flaticon.com/128/3135/3135715.png" class="w-8 h-8" />
-      <p>Mobile Recharge</p>
+      <img src="https://cdn-icons-png.flaticon.com/128/847/847969.png" class="w-8 h-8" />
+      <p>My Balance</p>
     </div>
     <div class="flex flex-col items-center hover:p-1 hover:border-2 hover:border-green-500">
-      <img src="https://cdn-icons-png.flaticon.com/128/2089/2089709.png" class="w-8 h-8" />
-      <p>Cash Out</p>
+      <img src="https://cdn-icons-png.flaticon.com/128/2935/2935737.png" class="w-8 h-8" />
+      <p>Earn Money</p>
     </div>
     <div class="flex flex-col items-center hover:p-1 hover:border-2 hover:border-green-500">
-      <img src="https://cdn-icons-png.flaticon.com/128/318/318221.png" class="w-8 h-8" />
-      <p>Payment</p>
+      <img src="https://cdn-icons-png.flaticon.com/128/2903/2903884.png" class="w-8 h-8" />
+      <p>Comming Soon</p>
     </div>
     <div class="flex flex-col items-center hover:p-1 hover:border-2 hover:border-green-500">
-      <img src="https://cdn-icons-png.flaticon.com/128/833/833472.png" class="w-8 h-8" />
-      <p>Add Money</p>
+      <img src="https://cdn-icons-png.flaticon.com/128/924/924915.png" class="w-8 h-8" />
+      <p>Profile Verification</p>
     </div>
     <div class="flex flex-col items-center hover:p-1 hover:border-2 hover:border-green-500">
-      <img src="https://cdn-icons-png.flaticon.com/128/1041/1041870.png" class="w-8 h-8" />
-      <p>Pay Bill</p>
+      <img src="https://cdn-icons-png.flaticon.com/128/1363/1363612.png" class="w-8 h-8" />
+      <p>Daily Task</p>
     </div>
     <div class="flex flex-col items-center rounded-md p-1 hover:p-1 hover:border-2 hover:border-green-500">
-      <img src="https://cdn-icons-png.flaticon.com/128/854/854878.png" class="w-8 h-8" />
-      <p>Ticket</p>
+      <img src="https://cdn-icons-png.flaticon.com/128/2399/2399372.png" class="w-8 h-8" />
+      <p>Bonus</p>
     </div>
     <div class="flex flex-col items-center hover:p-1 hover:border-2 hover:border-green-500">
-      <img src="https://cdn-icons-png.flaticon.com/128/1828/1828970.png" class="w-8 h-8" />
+      <img src="https://cdn-icons-png.flaticon.com/128/2201/2201448.png" class="w-8 h-8" />
       <p>More</p>
     </div>
   </div>
+
 
   <!-- My bKash Horizontal Scroll -->
   <div class="bg-white p-4 mt-2">
@@ -96,7 +101,7 @@
 
 
 
-<!-- Bottom Nav -->
+  <!-- Bottom Nav -->
   <div class="fixed bottom-0 left-0 right-0 bg-[#d6006e] text-white flex justify-around py-2 text-xs">
     <div class="flex flex-col items-center">
       <img src="https://cdn-icons-png.flaticon.com/128/1946/1946433.png" class="w-5 h-5" />
@@ -107,12 +112,12 @@
       <p>Payment</p>
     </div>
     <div class="flex flex-col items-center">
-      <img src="https://cdn-icons-png.flaticon.com/128/1077/1077046.png" class="w-5 h-5" />
+      <img src="https://cdn-icons-png.flaticon.com/128/1828/1828762.png" class="w-8 h-8" />
       <form method="POST" action="{{ route('logout') }}">
-          @csrf
-          <button type="submit" class="text-red-500 hover:text-red-700">
-              <span class="text-white">Logout</span>
-          </button>
+        @csrf
+        <button type="submit" class="text-red-500 hover:text-red-700">
+          <span class="text-white">Logout</span>
+        </button>
       </form>
     </div>
   </div>
@@ -126,7 +131,7 @@
 
       button.addEventListener("click", function () {
         icon.classList.remove("animate-spin");
-        text.textContent = <?php echo $money; ?>; 
+        text.textContent = <?php echo $money; ?>;
 
         button.disabled = true;
 
@@ -139,4 +144,5 @@
     });
   </script>
 </body>
+
 </html>
