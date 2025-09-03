@@ -8,15 +8,15 @@ class BlogController extends Controller
 {
     public function blogs_index()
     {
-        echo "this is a Blog manage function";
+        return view('admin.blog.blog-manage');
     }
 
     public function blog_create()
     {
-        echo "this is blog manage page ";
+        return view('admin.blog.blog-add');
     }
 
-    
+
 
 
     
