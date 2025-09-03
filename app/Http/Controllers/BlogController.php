@@ -16,6 +16,8 @@ class BlogController extends Controller
         echo "this is blog manage page ";
     }
 
+    
+
 
     
 }
