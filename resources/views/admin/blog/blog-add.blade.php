@@ -1,9 +1,9 @@
-@include('admin-layout.header')
+@include('admin.admin-layout.header')
 
 <!-- Page content -->
 <main class="p-6">
     <div class="w-full py-4 bg-slate-300 px-10 mb-5 rounded-sm">
-        <h1 class="text-2xl font-bold mb-6">Category Management</h1>
+        <h1 class="text-2xl font-bold mb-6">Blog Add From</h1>
     </div>
 
     <div class="w-full ">

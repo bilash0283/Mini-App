@@ -1,4 +1,4 @@
-@include('admin-layout.header')
+@include('admin.admin-layout.header')
 
     <!-- Page content -->
         <main class="p-6">
