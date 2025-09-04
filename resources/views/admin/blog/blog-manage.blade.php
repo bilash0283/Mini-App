@@ -1,4 +1,4 @@
-@include('admin-layout.header')
+@include('admin.admin-layout.header')
 
     <!-- Page content -->
         <main class="p-6">
@@ -23,23 +23,10 @@
                         </tr>
                     </thead>
                     <tbody class="divide-y divide-gray-700">
-                        @foreach ($categories as $category)
-                            <tr class="hover:bg-gray-800 hover:text-white">
-                                <td class="px-4 py-3">{{ $category->id }}</td>
-                                <td class="px-4 py-3">{{ $category->cat_name }}</td>
-                                <td class="px-4 py-3">{{ $category->description }}</td>
-                                <td class="px-4 py-3 {{ $category->status == 1 ? 'text-green-400' : 'text-red-500' }}">{{ $category->status == 1 ? 'Active' : 'Inactive' }}</td>
-                                <td class="px-4 py-3">
-                                    <div class="">
-                                        <a href="{{ route('category.edit',['id' => $category->id]) }}" class="bg-blue-500 px-2 py-1 text-white rounded-md">Edit</a>
-                                        <a href="{{ route('category.delete',['id' => $category->id]) }}" onclick="return confirm('Are You Sure to Delete it?')" class="bg-red-600 px-2 py-1 text-white rounded-md">Delete</a>
-                                    </div>
-                                </td>
-                            </tr>
-                        @endforeach
+                        
                     </tbody>
                 </table>
-                {{ $categories->links() }}
+               
                 </div>
             </div>
             <!-- category mage page exit done  -->
