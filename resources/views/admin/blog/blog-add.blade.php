@@ -11,7 +11,7 @@
             @csrf
             <div class="grid grid-cols-1 gap-x-8 gap-y-6 sm:grid-cols-2">
                 <div class="sm:col-span-2">
-                    <label for="first-name" class="block text-sm/6 font-semibold text-black">Category name</label>
+                    <label for="first-name" class="block text-sm/6 font-semibold text-black">Name</label>
                     <div class="mt-2.5">
                         <input id="first-name" type="text" name="name" autocomplete="given-name"
                             class="block w-full rounded-md bg-black/5 px-3.5 py-2 text-base text-black outline-1 -outline-offset-1 outline-black/10 placeholder:text-gray-500 focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-500" />
@@ -23,6 +23,17 @@
                     <div class="mt-2.5">
                         <textarea id="message" name="description" rows="4"
                             class="block w-full rounded-md bg-black/5 px-3.5 py-2 text-base text-black outline-1 -outline-offset-1 outline-black/10 placeholder:text-gray-500 focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-500"></textarea>
+                    </div>
+                </div>
+
+                <div class="sm:col-span-2">
+                    <label for="message" class="block text-sm/6 font-semibold text-black">Category</label>
+                    <div class="mt-2.5">
+                        <select name="status" class="block w-full rounded-md bg-black/5 px-3.5 py-2 text-base text-black outline-1 -outline-offset-1 outline-black/10 placeholder:text-gray-500 focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-500" id="">
+                            <option selected disabled>Select One</option>
+                            <option value="1">Active</option>
+                            <option value="2">Inactive</option>
+                        </select>
                     </div>
                 </div>
 
