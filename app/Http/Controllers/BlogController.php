@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Category;
 use Illuminate\Http\Request;
 
 class BlogController extends Controller
@@ -13,7 +14,9 @@ class BlogController extends Controller
 
     public function blog_create()
     {
-        return view('admin.blog.blog-add');
+        $categoris = Category::all();
+        dd($categoris);
+        return view('admin.blog.blog-add',['categories' => $categoris]);
     }
 
 
