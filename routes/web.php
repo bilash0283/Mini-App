@@ -31,7 +31,7 @@ Route::get('/dashboard', function () {
 Route::middleware(['auth'])->group(function () {
 
     // Profile routes
-    Route::get('/profile', [ProfileController::class, 'show'])->name('profile.show');  // নতুন
+    Route::get('/profile', [ProfileController::class, 'show'])->name('profile.show');  
     Route::get('/profile/edit', [ProfileController::class, 'edit'])->name('profile.edit');
     Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
@@ -55,10 +55,11 @@ Route::middleware(['auth'])->group(function () {
     // Blog Manage
     Route::get('/blogs', [BlogController::class, 'blogs_index'])->name('blogs.index');
     Route::get('/blogs/create', [BlogController::class, 'blog_create'])->name('blogs.create');
-    // Route::post('/blogs', [BlogController::class, 'store'])->name('blogs.store');
+    Route::post('/blogs', [BlogController::class, 'store'])->name('blogs.store');
     // Route::get('/blogs/{blog}/edit', [BlogController::class, 'edit'])->name('blogs.edit');
     // Route::put('/blogs/{blog}', [BlogController::class, 'update'])->name('blogs.update');
     // Route::delete('/blogs/{blog}', [BlogController::class, 'destroy'])->name('blogs.destroy');
+
 });
 
 require __DIR__.'/auth.php';
