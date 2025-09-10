@@ -31,10 +31,7 @@
                     <div class="mt-2.5">
                         <select name="status" class="block w-full rounded-md bg-black/5 px-3.5 py-2 text-base text-black outline-1 -outline-offset-1 outline-black/10 placeholder:text-gray-500 focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-500" id="">
                             <option selected disabled>Select One</option>
-                            @foreach ($category as $categories)
-                                <option value="1">Active</option>
-                                <option value="2">Inactive</option>
-                            @endforeach
+                           
                         </select>
                     </div>
                 </div>
