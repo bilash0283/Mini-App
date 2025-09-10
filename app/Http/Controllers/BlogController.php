@@ -14,7 +14,7 @@ class BlogController extends Controller
 
     public function blog_create()
     {
-        $categoris = Category::all();
+        $categoris = Category::paginate(10);
         return view('admin.blog.blog-add',['categories' => $categoris]);
     }
 
