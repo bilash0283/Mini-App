@@ -7,7 +7,7 @@
     </div>
 
     <div class="w-full ">
-        <form action="{{ route('blog.store') }}" method="POST" class="mx-auto  max-w-xl">
+        <form action="{{ route('blogs.store') }}" method="POST" class="mx-auto  max-w-xl">
             @csrf
             <div class="grid grid-cols-1 gap-x-8 gap-y-6 sm:grid-cols-2">
                 <div class="sm:col-span-2">

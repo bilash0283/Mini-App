@@ -18,6 +18,10 @@ class BlogController extends Controller
         return view('admin.blog.blog-add',['categories' => $categoris]);
     }
 
+    public function blog_store()
+    {
+        echo "this is a blog store page";
+    }
 
 
 

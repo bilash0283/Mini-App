@@ -55,7 +55,7 @@ Route::middleware(['auth'])->group(function () {
     // Blog Manage
     Route::get('/blogs', [BlogController::class, 'blogs_index'])->name('blogs.index');
     Route::get('/blogs/create', [BlogController::class, 'blog_create'])->name('blogs.create');
-    Route::post('/blogs', [BlogController::class, 'store'])->name('blogs.store');
+    Route::post('/blogs', [BlogController::class, 'blog_store'])->name('blogs.store');
     // Route::get('/blogs/{blog}/edit', [BlogController::class, 'edit'])->name('blogs.edit');
     // Route::put('/blogs/{blog}', [BlogController::class, 'update'])->name('blogs.update');
     // Route::delete('/blogs/{blog}', [BlogController::class, 'destroy'])->name('blogs.destroy');
