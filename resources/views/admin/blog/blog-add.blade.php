@@ -25,7 +25,6 @@
                             class="block w-full rounded-md bg-black/5 px-3.5 py-2 text-base text-black outline-1 -outline-offset-1 outline-black/10 placeholder:text-gray-500 focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-500"></textarea>
                     </div>
                 </div>
-                 {{ dd($categories) }}
 
                 <div class="sm:col-span-2">
                     <label for="message" class="block text-sm/6 font-semibold text-black">Category</label>
