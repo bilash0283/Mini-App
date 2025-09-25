@@ -30,7 +30,10 @@
                             <td>
                                 <span class="px-3 py-1 bg-green-500 text-white rounded-md">Active</span>
                             </td>
-                            <td>01</td>
+                            <td>
+                                <a class="px-3 py-1 bg-blue-500 text-white rounded-md">Edit</a>
+                                <a class="px-3 py-1 bg-red-500 text-white rounded-md">Delete</a>
+                            </td>
                         </tr>
                     </tbody>
                 </table>
