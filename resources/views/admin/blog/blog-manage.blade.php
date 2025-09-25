@@ -26,8 +26,10 @@
                         <tr class="hover:bg-slate-500 hover:text-white">
                             <td class="px-4 py-3">01</td>
                             <td>01</td>
-                            <td>01</td>
-                            <td>01</td>
+                            <td>Bilash Kumar Mondol</td>
+                            <td>
+                                <span class="px-3 py-1 bg-green-500 text-white rounded-md">Active</span>
+                            </td>
                             <td>01</td>
                         </tr>
                     </tbody>
