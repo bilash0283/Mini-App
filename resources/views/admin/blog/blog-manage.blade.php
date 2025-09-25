@@ -23,8 +23,8 @@
                         </tr>
                     </thead>
                     <tbody class="divide-y divide-gray-700">
-                        <tr>
-                            <td>01</td>
+                        <tr class="hover:bg-slate-500 hover:text-white">
+                            <td class="px-4 py-3">01</td>
                             <td>01</td>
                             <td>01</td>
                             <td>01</td>
