@@ -25,6 +25,10 @@
                     <tbody class="divide-y divide-gray-700">
                         <tr>
                             <td>01</td>
+                            <td>01</td>
+                            <td>01</td>
+                            <td>01</td>
+                            <td>01</td>
                         </tr>
                     </tbody>
                 </table>
